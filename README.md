@@ -13,6 +13,7 @@ This project implements a bunch of machine learning models from scratch using Nu
 - **Pure Python/NumPy**: Models implemented from scratch (no scikit-learn!)
 - **Easy Testing**: Simple command-line tool to evaluate model performance
 - **Customizable**: Tweak hyperparameters through command-line arguments
+- **Dimensionality Reduction**: PCA implementation for feature extraction and visualization
 
 
 ## 🚀 How to Use It
@@ -37,6 +38,12 @@ python evaluate.py logistic data/dataset1.csv true
 
 # Fine-tune logistic regression
 python evaluate.py logistic data/dataset2.csv false --learning-rate 0.005 --epochs 2000
+
+# Use PCA for dimensionality reduction
+python evaluate.py pca data/dataset4.csv false --n-components 2
+
+# Visualize the PCA results
+python evaluate.py pca data/dataset5.csv true --n-components 2 --visualize true
 ```
 
 ## 📋 Data Format
@@ -59,6 +66,7 @@ Want to add your own model? It's easy:
 
 - Python 3.6+
 - NumPy
+- Matplotlib (for PCA visualization)
 
 ## 🤝 Contributions Welcome!
 
