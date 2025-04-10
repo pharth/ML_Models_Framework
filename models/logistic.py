@@ -7,7 +7,7 @@ class LogisticRegressionModel(Model):
         self.epochs = epochs
         self.weights = None
     
-    def train(self, X: np.ndarray, y: np.ndarray):
+    def fit(self, X: np.ndarray, y: np.ndarray):
         """Train the model with the given data."""
         # Add bias feature
         n_samples, n_features = X.shape

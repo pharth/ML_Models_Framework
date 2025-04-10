@@ -7,7 +7,7 @@ class KNNModel(Model):
         self.X_train = None
         self.y_train = None
     
-    def train(self, X: np.ndarray, y: np.ndarray):
+    def fit(self, X: np.ndarray, y: np.ndarray):
         """Train the model with the given data."""
         self.X_train = X
         self.y_train = y

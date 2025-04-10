@@ -54,7 +54,7 @@ if __name__ == "__main__":
         model_name = args.model_name.capitalize()
         
         print(f"Training {model_name} model...")
-        model.train(X_train, y_train)
+        model.fit(X_train, y_train)
         
         print(f"Evaluating {model_name} model...")
         accuracy = model.evaluate(X_test, y_test)

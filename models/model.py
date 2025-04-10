@@ -3,7 +3,7 @@ import numpy as np
 
 class Model(ABC):
     @abstractmethod
-    def train(self, X: np.ndarray, y: np.ndarray):
+    def fit(self, X: np.ndarray, y: np.ndarray):
         """Train the model with the given data."""
         pass
 
